@@ -1,0 +1,14 @@
+venv
+/__pycache__/
+order/__pycache__/
+power_pet_pro/__pycache__/
+power_pet_pro_app/__pycache__/
+users/__pycache__/
+db.sqlite3
+power_pet_pro_app/media/
+.vercel
+node_modules
+yarn.lock
+packge.json
+.env
+power-pet-pro-a687ace4203c.json
