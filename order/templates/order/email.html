@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <body>
+        <div>
+            {% if user_profile %}
+                <h3>
+                    Hello {{ user_profile.first_name }} {{ user_profile.last_name }}!!
+                </h3>
+            {% elif user_email %}
+                <h3>
+                    Hello {{ user_email }}!!
+                </h3>
+            {% endif %}
+        </div>
+        <div>
+            <p>
+                Thank you for purchasing from PowerPetPro. We are pleased to announce that we have received your order
+                <a href="{{ order_link }}">
+                    {{ order_number }}</a>. You could view your order by clicking the order number or this link:
+                <a href="{{ order_link }}">
+                    {{ order_link }}
+                </a>. There, you could view all of your items, shipping address and so forth. If there are any issues,
+                you could reach out to me personally by email: justindo720@gmail.com to provide any feedbacks or helpful tips
+            </p>
+        </div>
+        <br>
+        <div>
+            <p>
+                <i>
+                    Developer Note: As this website is just a test run and I am the only developer on this project,
+                    I would love to hear how your process went so please click the button below to submit your feedback/comments.
+                </i>
+            </p>
+        </div>
+        <div class="center-div">
+            <a href="{{ feedback_link }}" class="button">
+                Submit Feedback
+            </a>
+        </div>
+        <br>
+        <div>
+            <p>
+                Huge thanks for joining the process,<br>
+                Justin Do &#128540;
+            </p>
+        </div>
+
+    </body>
+    <style>
+      .button {
+        background-color: rgb(9, 184, 202);
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .center-div{
+          text-align:center;
+      }
+    </style>
+</html>
+
+
+
+
+

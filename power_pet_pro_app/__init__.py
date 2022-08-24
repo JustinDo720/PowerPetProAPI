@@ -1,0 +1,1 @@
+default_app_config = 'power_pet_pro_app.apps.PowerPetProAppConfig'
